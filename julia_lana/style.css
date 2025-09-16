@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    text-align: center;
+    background-image: url(img/cachorrogrande.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center
+}
+
+header {
+    background-color: #52c4d8;
+}
+
+footer {
+    height: auto;
+    background-color: beige;
+}
+
+#brasil {
+    height: auto;
+    padding: 30px;
+}
+
+#eua {
+    height: auto;
+    padding: 30px;
+}
+
+#italia {
+    height: auto;
+    padding: 30px;
+}
+
+#china {
+    height: auto;
+    padding: 30px;
+}
+
+#produtos {
+    height: auto;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.logotipo{
+    height: 300px;
+    width: 350px;
+}
+
+.menu{
+    position: sticky;
+    top: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: beige;
+    box-shadow: 0 6px 12px -8px black;
+    padding: 6px;             
+    width: 100%;           
+    z-index: 1000; 
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    transition: 0.3s ease;
+    padding: 5px;
+}
+
+.menu a:hover{
+    color: beige;
+    text-decoration: underline;
+    background-color: #4161b9;
+    border-radius: 3px;
+}
+
+.menu li{
+    display: inline;
+    padding: 15px;
+}
+
+.texto_1{
+    background-color: beige;
+    margin: 0 400px 0 400px;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 15px;
+    transform: scale(1);
+    transition: 0.3s ease;
+    box-shadow: 0 2px 6px black;
+}
+
+.texto_1:hover{
+    background-color: #e6e6c1;
+    transition: 0.5s ease;
+    transform: scale(1.05);
+}
+
+.texto_1 p{
+    /* border: solid #771480; */
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.fotocopia {
+    height: 300px;
+    width: 300px;
+    padding-top: 30px;
+}
+
+.rodape {
+    height: 150px;
+    width: 500px;
+    padding: 15px;
+}
+
+.card {
+    border: solid 2px beige;
+    border-radius: 15px;
+    box-shadow: 0 2px 6px black;
+    width: 300px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: beige;
+    transform: scale(1);
+    transition: 0.3s ease;
+    margin: 15px;
+}
+
+.card:hover{
+    background-color: #e6e6c1;
+    transition: 0.5s ease;
+    transform: scale(1.05);
+}
+
+.imagemcard {
+    width: 280px;
+}
+
+.produtinho {
+    color: black;
+    font-size: medium;
+    font-weight: bold; 
+}
+
+.preco {
+    color: black;
+    font-size: larger;
+    font-weight: bold;
+}
