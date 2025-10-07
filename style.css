@@ -47,30 +47,28 @@ body{
 
 #colunas {
     display: grid;
-    grid-template-columns: 250px 1fr 250px; 
+    grid-template-columns: 300px 1fr 300px; 
     justify-content: center;
     padding: 0 100px;
     margin-top: 20px;
 }
 
 .coluna1 {
-    top: 50px;
+    top: 70px;
     margin-bottom: 20px;
     position: sticky;
-    background-color: #f5bc19;
-    height: 700px;
-    width: 250px;
+    height: 800px;
+    width: 300px;
     border-radius: 6px;
     box-shadow: 0 2px 6px black;
 }
 
 .coluna2 {
-    top: 50px;
+    top: 70px;
     margin-bottom: 20px;
     position: sticky;
-    background-color: #f5bc19;
-    height: 700px;
-    width: 250px;
+    height: 800px;
+    width: 300px;
     border-radius: 6px;
     box-shadow: 0 2px 6px black;
 }
@@ -90,7 +88,7 @@ body{
 
 .Item{
     background: white;
-    width: 650px;
+    width: 750px;
     padding: 10px;
     border-radius: 6px;
     box-shadow: 0 2px 6px black;
@@ -123,7 +121,7 @@ body{
 
 .Item-molho{
     background: white;
-    width: 550px;
+    width: 600px;
     padding: 20px;
     border-radius: 6px;
     box-shadow: 0 2px 6px black;
@@ -179,7 +177,7 @@ button {
 #lanches-unitarios{
     scroll-margin-top: 70px;
     margin: auto auto 30px;
-    width: 750px;
+    width: 850px;
     background-color: #f5bc19;
     display: grid;
     flex-direction: column;
@@ -197,7 +195,7 @@ button {
 #combos{
     scroll-margin-top: 50px;
     margin: 20px auto 10px;
-    width: 750px;
+    width: 850px;
     margin-top: 20px;
     margin-bottom: 20px;
     background-color: #f5bc19;
@@ -225,20 +223,20 @@ button {
     grid-template-columns: auto auto;
     grid-template-areas: "texto texto"; 
     justify-content: center;
-    gap: 60px;
+    gap: 30px;
     padding: 0 100px;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .conteudos-extras {
     scroll-margin-top: 70px;
-    margin: auto auto 20px;
+    margin: auto auto 30px;
     width: auto;
     background-color: #f5bc19;
     display: grid;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    padding: 0 30px 30px 30px;
     border-radius: 6px;
     box-shadow: 0 2px 6px black;
     font-family: Arial, Helvetica, sans-serif;
@@ -246,6 +244,7 @@ button {
 
 .conteudos-extras h2{
     text-align: center;
+    padding: 25px;
 }
 
 .sobre {
@@ -266,8 +265,8 @@ button {
 .valores {
     background: white;
     width: 500px;
-    height: 200px;
-    padding: 25px;
+    height: 230px;
+    padding: 20px;
     border-radius: 6px;
     box-shadow: 0 2px 6px black;
     flex-direction: column;
