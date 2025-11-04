@@ -12,7 +12,6 @@ header{
     text-align: center;
     padding-top: 70px;
     padding-bottom: 50px;
-    height: 200px;
     font-family: Arial, Helvetica, sans-serif;
     color: #f5bc19;
     font-size: xx-large;
@@ -24,7 +23,6 @@ header{
     display: grid;
     grid-template-columns: 220px 1fr 220px;
     grid-template-areas: "logo titulo";
-    column-gap: 50px;
 }
 
 .logo{
@@ -38,8 +36,6 @@ body{
 }
 
 .navbar{
-    grid-area: titulo;
-    background-color: #32bcd9;
     text-align: center;
     letter-spacing: 1rem;
     font-family: Arial, Helvetica, sans-serif;
@@ -49,8 +45,7 @@ body{
     display: grid;
     grid-template-columns: 300px 1fr 300px; 
     justify-content: center;
-    padding: 0 100px;
-    margin-top: 20px;
+    padding: 20px 100px;
 }
 
 .coluna1 {
@@ -74,12 +69,11 @@ body{
 }
 
 .BoxM{
-    margin-top: 10px;
     flex-direction: column;
     align-items: center;
     padding: 15px;
     transform: scale(1);
-    transition: o.3s ease;
+    transition: 0.3s ease;
 }
 
 .BoxM :hover{
@@ -98,10 +92,8 @@ body{
     grid-template-rows: auto auto;
     grid-template-areas: "titulo titulo" "imagem texto";
     gap: 20px;
-    margin: 0 auto;
     transform: scale(1);
     transition: 0.3s ease;
-    cursor: default;
 }
 
 .Item :hover{
@@ -131,17 +123,10 @@ body{
     margin: 0 auto;
     transform: scale(1);
     transition: 0.3s ease;
-    cursor: default;
 }
 
 .Item-molho :hover{
     transform: scale(1.005);
-}
-
-.texto {
-    grid-area: texto;
-    display: flex;
-    flex-direction: column; 
 }
 
 .preco {
@@ -227,7 +212,6 @@ button {
 }
 
 .conteudos-extras {
-    scroll-margin-top: 70px;
     margin: auto auto 30px;
     width: auto;
     background-color: #f5bc19;
@@ -255,9 +239,6 @@ button {
     flex-direction: column;
     display: flex;
     margin: 0 auto;
-    transform: scale(1);
-    transition: 0.3s ease;
-    cursor: default;
 }
 
 .valores {
@@ -270,9 +251,6 @@ button {
     flex-direction: column;
     display: flex;
     margin: 0 auto;
-    transform: scale(1);
-    transition: 0.3s ease;
-    cursor: default;
 }
 
 .texto2 {
@@ -333,10 +311,6 @@ button {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.container {
-    display: flex;
-}
-
 .insta {
     height: 50px;
     width: 50px; 
@@ -348,11 +322,8 @@ button {
     margin-top: 20px;
 }
 
-.carrossel {
-    width: 300px;             
-    height: 800px;             
-    overflow: hidden;          
-    position: relative;
+.carrossel {           
+    overflow: hidden;   
     background: white;
     margin: 0 auto;
 }
@@ -364,8 +335,6 @@ button {
 }
 
 .slides img {
-    width: 300px;
-    height: 800px;
     flex-shrink: 0;
     object-fit: cover;
 }
