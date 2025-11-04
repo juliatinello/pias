@@ -35,10 +35,39 @@ body{
     background-image: url(img/miniamborgue_fundo.jpg);
 }
 
-.navbar{
+.menu{
+    position: sticky;
+    top: 0;
+    display: flex;
     text-align: center;
-    letter-spacing: 1rem;
+    justify-content: center;
+    background-color: #32bcd9;
+    box-shadow: 0 6px 12px -8px black;
+    padding: 6px;             
+    width: 100%;           
+    z-index: 1000;        
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    transition: 0.3s ease;
+    padding: 4px;
+}
+
+.menu a:hover{
+    color: black;
+    text-decoration: none;
+    background-color: #f5bc19;
+    border-radius: 3px;
+}
+
+.menu li{
+    display: inline;
+    padding: 15px;
 }
 
 #colunas {
@@ -135,6 +164,13 @@ body{
     font-size: x-large;
 }
 
+.descricao {
+    text-align: justify;
+    margin-right: 10px;
+    font-size: larger;
+}
+
+
 button {
     background-color: #32bcd9;
     box-shadow: 0 2px 6px black;
@@ -156,7 +192,7 @@ button {
 }
 
 #lanches-unitarios{
-    scroll-margin-top: 70px;
+    scroll-margin-top: 50px;
     margin: auto auto 30px;
     width: 820px;
     background-color: #f5bc19;
@@ -195,27 +231,20 @@ button {
     font-size: xx-large;
 }
 
-.descricao {
-    text-align: justify;
-    margin-right: 10px;
-    font-size: larger;
-}
-
 #extras {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-areas: "texto texto"; 
     justify-content: center;
-    gap: 30px;
-    padding: 0 100px;
-    margin-top: 10px;
+    gap: 50px;
+    padding: 0;  
 }
 
 .conteudos-extras {
     margin: auto auto 30px;
     width: auto;
     background-color: #f5bc19;
-    display: grid;
+    display: flex;
     flex-direction: column;
     align-items: center;
     padding: 0 30px 30px 30px;
@@ -264,48 +293,13 @@ button {
     font-size: larger;
 }
 
-.menu{
-    position: sticky;
-    top: 0;
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    background-color: #32bcd9;
-    box-shadow: 0 6px 12px -8px black;
-    padding: 6px;             
-    width: 100%;           
-    z-index: 1000;        
-}
-
-.menu a{
-    text-decoration: none;
-    font-size: larger;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    transition: 0.3s ease;
-    padding: 4px;
-}
-
-.menu a:hover{
-    color: black;
-    text-decoration: none;
-    background-color: #f5bc19;
-    border-radius: 3px;
-}
-
-.menu li{
-    display: inline;
-    padding: 15px;
-}
-
 .rodape{
     background-color: #32bcd9;
     height: auto;
     padding-top: 10px;
     box-shadow: 0 2px 6px black;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;7
     align-items: center;
     padding: 30px;
     font-family: Arial, Helvetica, sans-serif;
@@ -322,7 +316,8 @@ button {
     margin-top: 20px;
 }
 
-.carrossel {           
+.carrossel {  
+    border-radius: 6px;         
     overflow: hidden;   
     background: white;
     margin: 0 auto;
