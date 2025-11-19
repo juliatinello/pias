@@ -35,39 +35,10 @@ body{
     background-image: url(img/miniamborgue_fundo.jpg);
 }
 
-.menu{
-    position: sticky;
-    top: 0;
-    display: flex;
+.navbar{
     text-align: center;
-    justify-content: center;
-    background-color: #32bcd9;
-    box-shadow: 0 6px 12px -8px black;
-    padding: 6px;             
-    width: 100%;           
-    z-index: 1000;        
-}
-
-.menu a{
-    text-decoration: none;
-    font-size: larger;
-    font-weight: bold;
+    letter-spacing: 1rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: black;
-    transition: 0.3s ease;
-    padding: 4px;
-}
-
-.menu a:hover{
-    color: black;
-    text-decoration: none;
-    background-color: #f5bc19;
-    border-radius: 3px;
-}
-
-.menu li{
-    display: inline;
-    padding: 15px;
 }
 
 #colunas {
@@ -164,13 +135,6 @@ body{
     font-size: x-large;
 }
 
-.descricao {
-    text-align: justify;
-    margin-right: 10px;
-    font-size: larger;
-}
-
-
 button {
     background-color: #32bcd9;
     box-shadow: 0 2px 6px black;
@@ -231,20 +195,27 @@ button {
     font-size: xx-large;
 }
 
+.descricao {
+    text-align: justify;
+    margin-right: 10px;
+    font-size: larger;
+}
+
 #extras {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-areas: "texto texto"; 
     justify-content: center;
-    gap: 50px;
-    padding: 0;  
+    gap: 30px;
+    padding: 0 100px;
+    margin-top: 10px;
 }
 
 .conteudos-extras {
     margin: auto auto 30px;
     width: auto;
     background-color: #f5bc19;
-    display: flex;
+    display: grid;
     flex-direction: column;
     align-items: center;
     padding: 0 30px 30px 30px;
@@ -293,6 +264,41 @@ button {
     font-size: larger;
 }
 
+.menu{
+    position: sticky;
+    top: 0;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #32bcd9;
+    box-shadow: 0 6px 12px -8px black;
+    padding: 6px;             
+    width: 100%;           
+    z-index: 1000;        
+}
+
+.menu a{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    transition: 0.3s ease;
+    padding: 4px;
+}
+
+.menu a:hover{
+    color: black;
+    text-decoration: none;
+    background-color: #f5bc19;
+    border-radius: 3px;
+}
+
+.menu li{
+    display: inline;
+    padding: 15px;
+}
+
 .rodape{
     background-color: #32bcd9;
     height: auto;
@@ -308,17 +314,19 @@ button {
 .insta {
     height: 50px;
     width: 50px; 
+    margin-bottom: 15px;
     display: flex;
-    align-items: center;
 }
 
-.rodape p {
+.info {
+    font-size: larger;
+    text-decoration: none;
+    color: black;
+    margin-top: 10px;
     text-align: center;
-    margin-top: 20px;
 }
 
-.carrossel {  
-    border-radius: 6px;         
+.carrossel {           
     overflow: hidden;   
     background: white;
     margin: 0 auto;
@@ -334,3 +342,132 @@ button {
     flex-shrink: 0;
     object-fit: cover;
 }
+
+@media (max-width: 1024px) {
+
+    #header-container {
+        display: flex;
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    .header-text h1 {
+        text-align: right;
+        margin-right: 30px;
+    }
+
+    #colunas {
+        grid-template-columns: 1fr; 
+        padding: 10px;
+    }
+
+    .coluna1, .coluna2 {
+        display: none; 
+    }
+
+    .Item, .Item-molho {
+        width: 100%;
+    }
+
+    #extras {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 10px;
+        padding: 0 20px;
+    }
+
+    .conteudos-extras {
+        width: 100% !important;
+    }
+
+    .sobre, .valores {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
+@media (max-width: 768px) {
+
+    #header-container {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .header-text {
+        display: none;
+    }
+
+    .logo {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .coluna1, .coluna2 {
+        display: none;
+    }
+
+    #colunas {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .Item, #lanches-unitarios, #combos, .conteudos-extras {
+        width: 100%;
+    }
+
+    #lanches-unitarios {
+       margin-top: 20px;
+    }
+
+    #combos {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    #extras {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 10px;
+        padding: 0 20px;
+    }
+
+    .conteudos-extras {
+        width: 100% !important;
+    }
+
+    .sobre, .valores {
+        width: 100% !important;
+        height: auto !important;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .header-text {
+        font-size: 1.4rem;
+        padding: 30px 10px;
+    }
+
+    .menu li {
+        display: block;
+        padding: 10px;
+    }
+
+    .Item, .Item-molho {
+        width: 50%;
+        padding: 15px;
+    }
+
+    .sobre, .valores {
+        width: 50%;
+        display: flex;
+        padding: 15px;
+        height: auto;
+    }
+
+    #lanches-unitarios, #combos, .conteudos-extras {
+        width: 50%;
+        margin: 10px auto;
+    }
+}
+
