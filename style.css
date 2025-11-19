@@ -354,6 +354,7 @@ button {
     .header-text h1 {
         text-align: right;
         margin-right: 30px;
+        width: 50px;
     }
 
     #colunas {
@@ -454,19 +455,19 @@ button {
     }
 
     .Item, .Item-molho {
-        width: 50%;
+        width: 100%;
         padding: 15px;
     }
 
     .sobre, .valores {
-        width: 50%;
+        width: 100%;
         display: flex;
         padding: 15px;
         height: auto;
     }
 
     #lanches-unitarios, #combos, .conteudos-extras {
-        width: 50%;
+        width: 100%;
         margin: 10px auto;
     }
 }
