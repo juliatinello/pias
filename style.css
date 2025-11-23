@@ -6,6 +6,7 @@
 
 header{
     background-color: #32bcd9;
+    width: 100%;
 }
 
 .header-text{
@@ -45,13 +46,15 @@ body{
     display: grid;
     grid-template-columns: 300px 1fr 300px; 
     justify-content: center;
-    padding: 20px 100px;
+    align-items: start;
+    padding: 40px 100px;
+    gap: 20px;
 }
 
 .coluna1 {
-    top: 70px;
-    margin-bottom: 20px;
+    margin: 0 auto 0;
     position: sticky;
+    top: calc(50vh - 400px + 20px); 
     height: 800px;
     width: 300px;
     border-radius: 6px;
@@ -59,9 +62,9 @@ body{
 }
 
 .coluna2 {
-    top: 70px;
-    margin-bottom: 20px;
+    margin: 0 auto 0;
     position: sticky;
+    top: calc(50vh - 400px + 20px); 
     height: 800px;
     width: 300px;
     border-radius: 6px;
@@ -157,7 +160,7 @@ button {
 
 #lanches-unitarios{
     scroll-margin-top: 50px;
-    margin: auto auto 30px;
+    margin: auto auto 40px;
     width: 820px;
     background-color: #f5bc19;
     display: grid;
@@ -176,10 +179,9 @@ button {
 
 #combos{
     scroll-margin-top: 50px;
-    margin: 20px auto 10px;
+    margin: 20px auto 0;
     width: 820px;
     margin-top: 20px;
-    margin-bottom: 20px;
     background-color: #f5bc19;
     display: flex;
     flex-direction: column;
@@ -207,8 +209,7 @@ button {
     grid-template-areas: "texto texto"; 
     justify-content: center;
     gap: 30px;
-    padding: 0 100px;
-    margin-top: 10px;
+    padding: 0 100px 10px;
 }
 
 .conteudos-extras {
@@ -303,6 +304,7 @@ button {
     background-color: #32bcd9;
     height: auto;
     padding-top: 10px;
+    width: 100%;
     box-shadow: 0 2px 6px black;
     display: flex;
     flex-direction: column;
@@ -349,12 +351,6 @@ button {
         display: flex;
         justify-content: space-between; 
         align-items: center;
-    }
-
-    .header-text h1 {
-        text-align: right;
-        margin-right: 30px;
-        width: 50px;
     }
 
     #colunas {
@@ -471,4 +467,3 @@ button {
         margin: 10px auto;
     }
 }
-
