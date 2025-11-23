@@ -133,7 +133,13 @@ body{
 }
 
 .preco {
-    margin-top: 10px;
+    margin-top: 65px;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.preco2 {
+    margin-top: 42px;
     font-weight: bold;
     font-size: x-large;
 }
@@ -347,10 +353,6 @@ button {
 
 @media (max-width: 1024px) {
 
-    body {
-        padding-top: 180px; /* ajuste conforme a altura real do seu menu */
-    }
-
     #header-container {
         display: flex;
         justify-content: space-between; 
@@ -388,10 +390,6 @@ button {
 }
 
 @media (max-width: 768px) {
-
-    body {
-        padding-top: 200px; /* menu maior no tablet */
-    }
 
     #header-container {
         grid-template-columns: 1fr;
@@ -447,10 +445,6 @@ button {
 }
 
 @media (max-width: 480px) {
-
-    body {
-        padding-top: 240px; /* menu ainda maior no mobile */
-    }
 
     .header-text {
         font-size: 1.4rem;
