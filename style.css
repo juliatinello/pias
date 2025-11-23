@@ -144,17 +144,26 @@ body{
     font-size: x-large;
 }
 
-button {
+.button {
     background-color: #32bcd9;
     box-shadow: 0 2px 6px black;
     border: none;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
     color: white;
     margin-top: 10px;
-    height: 40px;
     width: 150px;
     border-radius: 6px;
     font-weight: bold;
     font-size: larger;
+    transform: scale(1.005);
+    transition: 0.3s ease;
+}
+
+.button:hover {
+    transform: scale(1.05);
+    background-color: #38cae7;
 }
 
 .produtos {
@@ -338,6 +347,7 @@ button {
     overflow: hidden;   
     background: white;
     margin: 0 auto;
+    border-radius: 6px;
 }
 
 .slides {
