@@ -26,4 +26,12 @@ todosCarrosseis.forEach((slides) => {
   }
 
   setInterval(mudarSlide, 3000);
+})
+
+
+document.querySelectorAll('.button2').forEach(botao => {
+    botao.addEventListener('click', function (e) {
+        e.preventDefault();                
+        this.classList.toggle('ativo');       
+    });
 });
