@@ -78,14 +78,8 @@ body{
     transition: 0.3s ease;
 }
 
-.BoxM :hover{
+.BoxM:hover{
     transform: scale(1.05);    
-}
-
-.BoxM2{
-    flex-direction: column;
-    align-items: center;
-    padding: 15px;
 }
 
 .Item{
@@ -104,7 +98,7 @@ body{
     transition: 0.3s ease;
 }
 
-.Item :hover{
+.Item:hover{
     transform: scale(1.005);
 }
 
@@ -112,71 +106,6 @@ body{
     grid-area: titulo;
     text-align: center;
     font-size: x-large;
-}
-
-.Item2{
-    background: white;
-    width: 750px;
-    padding: 10px;
-    border-radius: 6px;
-    box-shadow: 0 2px 6px black;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    transform: scale(1);
-    transition: 0.3s ease;
-}
-
-.Item2 :hover{
-    transform: scale(1.005);
-}
-
-.Item2 h3{
-    grid-area: titulo;
-    text-align: center;
-    font-size: x-large;
-}
-
-.Item3{
-    padding-left: 70px;
-    height: 20px;
-    margin-bottom: 35px;
-    width: 750px;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    gap: 20px;
-}
-
-.Item3 :hover{
-    transform: scale(1.005);
-}
-
-.Item3 h3{
-    grid-area: titulo;
-    text-align: center;
-    font-size: x-large;
-}
-
-.texto-compras {
-    justify-content: center;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    row-gap: 20px;
-    column-gap: 40px;
-    padding-bottom: 20px;
-    align-items: center;
-}
-
-.texto-compras2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 40px;
-    padding-bottom: 20px;
-    align-items: center;
-    transform: scale(1);
-    transition: 0.3s ease;
 }
 
 .texto {
@@ -198,7 +127,7 @@ body{
     transition: 0.3s ease;
 }
 
-.Item-molho :hover{
+.Item-molho:hover{
     transform: scale(1.005);
 }
 
@@ -220,12 +149,6 @@ body{
     font-size: xx-large;
 }
 
-.preco4 {
-    margin-top: 91px;
-    font-weight: bold;
-    font-size: xxx-large;
-}
-
 .button {
     background-color: #32bcd9;
     box-shadow: 0 2px 6px black;
@@ -244,55 +167,6 @@ body{
 }
 
 .button:hover {
-    transform: scale(1.05);
-    background-color: #38cae7;
-}
-
-.button2 {
-    background-color: #32bcd9;
-    box-shadow: 0 2px 6px black;
-    border: none;
-    text-decoration: none;
-    text-align: center;
-    padding: 10px;
-    color: white;
-    margin-top: 10px;
-    width: 150px;
-    border-radius: 6px;
-    font-weight: bold;
-    font-size: x-large;
-    transform: scale(1.005);
-    transition: 0.3s ease;
-}
-
-.button2:hover {
-    transform: scale(1.05);
-    background-color: #38cae7;
-}
-
-.button2.ativo {
-    background-color: #44d6f3; 
-    transform: scale(1.05);
-}
-
-.button3 {
-    background-color: #32bcd9;
-    box-shadow: 0 2px 6px black;
-    border: none;
-    text-decoration: none;
-    text-align: center;
-    padding: 10px;
-    color: white;
-    margin-top: 10px;
-    width: 230px;
-    border-radius: 6px;
-    font-weight: bold;
-    font-size: x-large;
-    transform: scale(1.005);
-    transition: 0.3s ease;
-}
-
-.button3:hover {
     transform: scale(1.05);
     background-color: #38cae7;
 }
@@ -319,25 +193,6 @@ body{
 }
 
 #lanches-unitarios h2{
-    text-align: center;
-    font-size: xx-large;
-}
-
-#lanches-unitarios2{
-    scroll-margin-top: 50px;
-    margin: 40px auto 40px;
-    width: 820px;
-    background-color: #f5bc19;
-    display: grid;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    border-radius: 6px;
-    box-shadow: 0 2px 6px black;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#lanches-unitarios2 h2{
     text-align: center;
     font-size: xx-large;
 }
