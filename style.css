@@ -338,6 +338,24 @@ body{
     width: 55px; 
     margin-bottom: 20px;
     display: flex;
+    transform: scale(1);
+    transition: 0.3s ease;
+}
+
+.insta:hover {
+    transform: scale(1.05);
+}
+
+.descricao3 {
+    text-align: justify;
+    margin-right: 10px;
+    font-size: x-large;
+    transform: scale(1);
+    transition: 0.3s ease;
+}
+
+.descricao3:hover {
+    transform: scale(1.05);
 }
 
 .info {
@@ -346,12 +364,54 @@ body{
     color: black;
     margin-top: 10px;
     text-align: center;
+    transform: scale(1);
+    transition: 0.3s ease;
+}
+
+.info:hover {
+    transform: scale(1.05);
+}
+
+#logos {
+    display: grid;
+    grid-template-columns: 180px 250px 180px;
+    gap: 60px;
 }
 
 .wagner {
-    height: 230px;
+    height: auto;
+    width: 250px;
+    margin-top: 60px;
+    transform: scale(1);
+    transition: 0.3s ease;
+}
+
+.wagner:hover {
+    transform: scale(1.05);
+}
+
+.brasao1 {
+    height: auto;
+    width: 180px;
+    margin-top: 80px;
+    transform: scale(1);
+    transition: 0.3s ease;
+}
+
+.brasao1:hover {
+    transform: scale(1.05);
+}
+
+.brasao2 {
+    height: 180px;
     width: auto;
-    margin-top: 20px;
+    margin-top: 80px;
+    transform: scale(1);
+    transition: 0.3s ease;
+}
+
+.brasao2:hover {
+    transform: scale(1.05);
 }
 
 .carrossel {           

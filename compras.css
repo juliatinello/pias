@@ -98,7 +98,7 @@ body{
 .BoxM2{
     flex-direction: column;
     align-items: center;
-    padding: 15px;
+    padding: 10px;
 }
 
 #lanches-unitarios2{
@@ -147,6 +147,7 @@ body{
 }
 
 .Item2{
+    align-items: center;
     background: white;
     width: 750px;
     padding: 10px;
@@ -154,6 +155,8 @@ body{
     box-shadow: 0 2px 6px black;
     flex-direction: column;
     display: flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
     gap: 20px;
     transform: scale(1);
@@ -171,9 +174,8 @@ body{
 }
 
 .Item3{
-    padding-left: 70px;
     height: 20px;
-    margin-bottom: 35px;
+    margin-bottom: 42px;
     width: 750px;
     flex-direction: column;
     display: flex;
@@ -197,7 +199,7 @@ body{
     row-gap: 20px;
     column-gap: 40px;
     padding-bottom: 20px;
-    align-items: center;
+    margin-left: 10px;
 }
 
 .texto-compras2 {
@@ -206,15 +208,13 @@ body{
     row-gap: 20px;
     column-gap: 25px;
     padding-bottom: 20px;
-    align-items: center;
+    margin-left: 10px;
 }
 
 .texto-compras3 {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     column-gap: 40px;
-    padding-bottom: 20px;
-    align-items: center;
     transform: scale(1);
     transition: 0.3s ease;
 }
@@ -345,6 +345,16 @@ body{
     color: black;
 }
 
+#preco-final {
+    margin-left: 15px;
+    margin-top: 5px;
+    text-decoration: none;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
 .rodape{
     background-color: #32bcd9;
     height: auto;
@@ -363,6 +373,24 @@ body{
     width: 55px; 
     margin-bottom: 20px;
     display: flex;
+    transform: scale(1);
+    transition: 0.3s ease;
+}
+
+.insta:hover {
+    transform: scale(1.05);
+}
+
+.descricao3 {
+    text-align: justify;
+    margin-right: 10px;
+    font-size: x-large;
+    transform: scale(1);
+    transition: 0.3s ease;
+}
+
+.descricao3:hover {
+    transform: scale(1.05);
 }
 
 .info {
@@ -371,6 +399,54 @@ body{
     color: black;
     margin-top: 10px;
     text-align: center;
+    transform: scale(1);
+    transition: 0.3s ease;
+}
+
+.info:hover {
+    transform: scale(1.05);
+}
+
+#logos {
+    display: grid;
+    grid-template-columns: 180px 250px 180px;
+    gap: 60px;
+}
+
+.wagner {
+    height: auto;
+    width: 250px;
+    margin-top: 60px;
+    transform: scale(1);
+    transition: 0.3s ease;
+}
+
+.wagner:hover {
+    transform: scale(1.05);
+}
+
+.brasao1 {
+    height: auto;
+    width: 180px;
+    margin-top: 80px;
+    transform: scale(1);
+    transition: 0.3s ease;
+}
+
+.brasao1:hover {
+    transform: scale(1.05);
+}
+
+.brasao2 {
+    height: 180px;
+    width: auto;
+    margin-top: 80px;
+    transform: scale(1);
+    transition: 0.3s ease;
+}
+
+.brasao2:hover {
+    transform: scale(1.05);
 }
 
 @media (max-width: 1024px) {
@@ -381,34 +457,10 @@ body{
         align-items: center;
     }
 
-    #colunas {
-        grid-template-columns: 1fr; 
-        padding: 10px;
-    }
-
-    .coluna1, .coluna2 {
-        display: none; 
-    }
-
-    .Item, .Item-molho {
+    .Item2, .Item3 {
         width: 100%;
     }
 
-    #extras {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 10px;
-        padding: 0 20px;
-    }
-
-    .conteudos-extras {
-        width: 100% !important;
-    }
-
-    .sobre, .valores {
-        width: 100% !important;
-        height: auto !important;
-    }
 }
 
 @media (max-width: 768px) {
@@ -436,33 +488,12 @@ body{
         padding: 10px;
     }
 
-    .Item, #lanches-unitarios, #combos, .conteudos-extras {
+    .Item2, .Item3, #lanches-unitarios2 {
         width: 100%;
     }
 
-    #lanches-unitarios {
+    #lanches-unitarios2 {
        margin-top: 20px;
-    }
-
-    #combos {
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    #extras {
-        display: flex !important;
-        flex-direction: column !important;
-        gap: 10px;
-        padding: 0 20px;
-    }
-
-    .conteudos-extras {
-        width: 100% !important;
-    }
-
-    .sobre, .valores {
-        width: 100% !important;
-        height: auto !important;
     }
 }
 
@@ -478,19 +509,12 @@ body{
         padding: 10px;
     }
 
-    .Item, .Item-molho {
+    .Item2, .Item3 {
         width: 100%;
         padding: 15px;
     }
 
-    .sobre, .valores {
-        width: 100%;
-        display: flex;
-        padding: 15px;
-        height: auto;
-    }
-
-    #lanches-unitarios, #combos, .conteudos-extras {
+    #lanches-unitarios2 {
         width: 100%;
         margin: 10px auto;
     }

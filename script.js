@@ -37,45 +37,60 @@ document.querySelectorAll('.button2').forEach(botao => {
 });
 
 
-    document.addEventListener('DOMContentLoaded', () => {
-      let itensAdicionados = 0;
-      const contador = document.getElementById('contador');
+document.addEventListener('DOMContentLoaded', () => {
+    let itensAdicionados = 0;
+    const contador = document.getElementById('contador');
 
-      function atualizaContador() {
+    let precoBase = 22.90;
+    let precoFinal = precoBase;
+
+    const precoFinalElemento = document.querySelector('.texto-compras3 p');
+
+    function atualizaContador() {
         contador.textContent = "Itens adicionados: " + itensAdicionados;
-      }
+    }
 
-      document.querySelectorAll('.button2').forEach(botao => {
+    function atualizaPreco() {
+        precoFinal = (precoBase + itensAdicionados * 1.90).toFixed(2);
+        precoFinalElemento.textContent = `Preço final: R$${precoFinal}`;
+    }
+
+    document.querySelectorAll('.button2').forEach(botao => {
         botao.replaceWith(botao.cloneNode(true));
-      });
+    });
 
-      document.querySelectorAll('.button2').forEach(botao => {
+    document.querySelectorAll('.button2').forEach(botao => {
         botao.addEventListener('click', function (e) {
-          e.preventDefault && e.preventDefault();
+            e.preventDefault && e.preventDefault();
 
-          const ativadoAgora = this.classList.toggle('ativo');
-          if (ativadoAgora) itensAdicionados++;
-          else itensAdicionados = Math.max(0, itensAdicionados - 1);
+            const ativadoAgora = this.classList.toggle('ativo');
 
-          if (ativadoAgora) {
-            this.style.backgroundColor = '#44d6f3';
-            this.style.transform = 'scale(1.05)';
-          } else {
-            this.style.backgroundColor = '#32bcd9';
-            this.style.transform = 'scale(1.005)';
-          }
+            if (ativadoAgora) itensAdicionados++;
+            else itensAdicionados = Math.max(0, itensAdicionados - 1);
 
-          atualizaContador();
-          console.log('Clique em:', this.textContent.trim(), 'ativado?', ativadoAgora);
+            if (ativadoAgora) {
+                this.style.backgroundColor = '#44d6f3';
+                this.style.transform = 'scale(1.05)';
+            } else {
+                this.style.backgroundColor = '#32bcd9';
+                this.style.transform = 'scale(1.005)';
+            }
+
+            atualizaContador();
+            atualizaPreco();
+
+            console.log('Clique em:', this.textContent.trim(), 'ativado?', ativadoAgora);
         });
 
         botao.addEventListener('focus', () => botao.style.outline = '2px solid rgba(0,0,0,0.1)');
         botao.addEventListener('blur', () => botao.style.outline = 'none');
-      });
-
-      atualizaContador();
-      console.log('Script de teste iniciado — botões prontos.');
     });
+
+    atualizaContador();
+    atualizaPreco();
+
+    console.log('Script iniciado — adicionadores funcionando com preço final.');
+});
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -86,12 +101,10 @@ document.addEventListener('DOMContentLoaded', () => {
     contador2.textContent = "Itens removidos: " + itensRemovidos;
   }
 
-  // Remove listeners antigos (caso haja)
   document.querySelectorAll('.button4').forEach(botao => {
     botao.replaceWith(botao.cloneNode(true));
   });
 
-  // Re-seleciona os botões já clonados
   document.querySelectorAll('.button4').forEach(botao => {
 
     botao.addEventListener('click', function (e) {
@@ -102,7 +115,6 @@ document.addEventListener('DOMContentLoaded', () => {
       if (ativadoAgora) itensRemovidos++;
       else itensRemovidos = Math.max(0, itensRemovidos - 1);
 
-      // Estilo quando ativo
       if (ativadoAgora) {
         this.style.backgroundColor = '#44d6f3';
         this.style.transform = 'scale(1.05)';
